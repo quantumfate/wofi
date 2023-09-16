@@ -1,7 +1,7 @@
 <h3 align="center">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-	Catppuccin for <a href="https://github.com/catppuccin/template">App</a>
+	Catppuccin for <a href="https://hg.sr.ht/~scoopta/wofi">Wofi</a>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 
@@ -12,44 +12,50 @@
 </p>
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/preview.webp"/>
+	<img src="https://raw.githubusercontent.com/quantumfate/wofi/main/assets/preview.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/latte.webp"/>
+<img src="https://raw.githubusercontent.com/quantumfate/wofi/main/assets/latte.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/frappe.webp"/>
+<img src="https://raw.githubusercontent.com/quantumfate/wofi/main/assets/frappe.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/macchiato.webp"/>
+<img src="https://raw.githubusercontent.com/quantumfate/wofi/main/assets/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/mocha.webp"/>
+<img src="https://raw.githubusercontent.com/quantumfate/wofi/main/assets/mocha.webp"/>
 </details>
 
 ## Usage
 
-1. Clone this repository locally
-2. Open the app's settings
-3. Select `import theme` and browse to where you cloned Catppuccin
-4. Select it
+1. Clone this repository locally to your desired location. Typically something like `~/.config/`
+2. Launch Wofi with your desired flavor (e.g. `latte`, `frappe`, `macchiato` or `mocha`).
 
-<!-- this section is optional -->
-## 🙋 FAQ
+```bash
+wofi --conf <your-path-to-wofi>/config --style <your-path-to-wofi>/<flavor>/style.css
 
--	Q: **_"Where can I find the doc?"_**\
-	A: Run `:help theme`
+```
+
+-	Q: **_"Which flavor of CSS is supported."_**\
+	A: [GTK CSS](https://docs.gtk.org/gtk3/). Nate that hsl-colors are not supported.
+
+-	Q: **_"Where can I find CSS targets for theme customization."_**\
+	A: On the [Wofi page](https://hg.sr.ht/~scoopta/wofi) and on the [man page](https://man.archlinux.org/man/wofi.7.en).
+
+-	Q: **_"My CSS imports are not working."_**\
+	A: Please read the [Wofi configuration](https://man.archlinux.org/man/wofi.5.en#CONFIG_OPTIONS) options. Especially in regards to `style` and `stylesheet`. We avoid import statements for simplicity.
 
 ## 💝 Thanks to
 
-- ["quantumfate"](https://github.com/quantumfate)
+- [quantumfate](https://github.com/quantumfate)
 
 &nbsp;
 
