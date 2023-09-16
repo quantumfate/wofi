@@ -1,0 +1,164 @@
+@define-color	rosewater  #f2d5cf;
+@define-color	rosewater-rgb  rgb(242, 213, 207);
+@define-color	flamingo  #eebebe;
+@define-color	flamingo-rgb  rgb(238, 190, 190);
+@define-color	pink  #f4b8e4;
+@define-color	pink-rgb  rgb(244, 184, 228);
+@define-color	mauve  #ca9ee6;
+@define-color	mauve-rgb  rgb(202, 158, 230);
+@define-color	red  #e78284;
+@define-color	red-rgb  rgb(231, 130, 132);
+@define-color	maroon  #ea999c;
+@define-color	maroon-rgb  rgb(234, 153, 156);
+@define-color	peach  #ef9f76;
+@define-color	peach-rgb  rgb(239, 159, 118);
+@define-color	yellow  #e5c890;
+@define-color	yellow-rgb  rgb(229, 200, 144);
+@define-color	green  #a6d189;
+@define-color	green-rgb  rgb(166, 209, 137);
+@define-color	teal  #81c8be;
+@define-color	teal-rgb  rgb(129, 200, 190);
+@define-color	sky  #99d1db;
+@define-color	sky-rgb  rgb(153, 209, 219);
+@define-color	sapphire  #85c1dc;
+@define-color	sapphire-rgb  rgb(133, 193, 220);
+@define-color	blue  #8caaee;
+@define-color	blue-rgb  rgb(140, 170, 238);
+@define-color	lavender  #babbf1;
+@define-color	lavender-rgb  rgb(186, 187, 241);
+@define-color	text  #c6d0f5;
+@define-color	text-rgb  rgb(198, 208, 245);
+@define-color	subtext1  #b5bfe2;
+@define-color	subtext1-rgb  rgb(181, 191, 226);
+@define-color	subtext0  #a5adce;
+@define-color	subtext0-rgb  rgb(165, 173, 206);
+@define-color	overlay2  #949cbb;
+@define-color	overlay2-rgb  rgb(148, 156, 187);
+@define-color	overlay1  #838ba7;
+@define-color	overlay1-rgb  rgb(131, 139, 167);
+@define-color	overlay0  #737994;
+@define-color	overlay0-rgb  rgb(115, 121, 148);
+@define-color	surface2  #626880;
+@define-color	surface2-rgb  rgb(98, 104, 128);
+@define-color	surface1  #51576d;
+@define-color	surface1-rgb  rgb(81, 87, 109);
+@define-color	surface0  #414559;
+@define-color	surface0-rgb  rgb(65, 69, 89);
+@define-color	base  #303446;
+@define-color	base-rgb  rgb(48, 52, 70);
+@define-color	mantle  #292c3c;
+@define-color	mantle-rgb  rgb(41, 44, 60);
+@define-color	crust  #232634;
+@define-color	crust-rgb  rgb(35, 38, 52);
+
+* {
+  font-family: 'Inconsolata Nerd Font', monospace;
+  font-size: 14px;
+}
+
+/* Window */
+window {
+  margin: 0px;
+  padding: 10px;
+  border: 0.16em solid @lavender;
+  border-radius: 0.1em;
+  background-color: @base;
+  animation: slideIn 0.5s ease-in-out both;
+}
+
+/* Slide In */
+@keyframes slideIn {
+  0% {
+     opacity: 0;
+  }
+
+  100% {
+     opacity: 1;
+  }
+}
+
+/* Inner Box */
+#inner-box {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: @base;
+  animation: fadeIn 0.5s ease-in-out both;
+}
+
+/* Fade In */
+@keyframes fadeIn {
+  0% {
+     opacity: 0;
+  }
+
+  100% {
+     opacity: 1;
+  }
+}
+
+/* Outer Box */
+#outer-box {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: @base;
+}
+
+/* Scroll */
+#scroll {
+  margin: 0px;
+  padding: 10px;
+  border: none;
+  background-color: @base;
+}
+
+/* Input */
+#input {
+  margin: 5px 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 0.1em;
+  color: @text;
+  background-color: @base;
+  animation: fadeIn 0.5s ease-in-out both;
+}
+
+#input image {
+    border: none;
+    color: @red;
+}
+
+#input * {
+  outline: 4px solid @red!important;
+}
+
+/* Text */
+#text {
+  margin: 5px;
+  border: none;
+  color: @text;
+  animation: fadeIn 0.5s ease-in-out both;
+}
+
+#entry {
+  background-color: @base;
+}
+
+#entry arrow {
+  border: none;
+  color: @lavender;
+}
+
+/* Selected Entry */
+#entry:selected {
+  border: 0.11em solid @lavender;
+}
+
+#entry:selected #text {
+  color: @mauve;
+}
+
+#entry:drop(active) {
+  background-color: @lavender!important;
+}
