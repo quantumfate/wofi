@@ -44,6 +44,21 @@ wofi --conf <your-path-to-wofi>/config --style <your-path-to-wofi>/<flavor>/styl
 
 ```
 
+I'm personally using a bash script:
+
+```bash
+#!/usr/bin/env bash
+
+CONFIG="$HOME/.config/hypr/wofi/config/config"
+STYLE="$HOME/.config/hypr/wofi/src/mocha/style.css"
+
+if [[ ! $(pidof wofi) ]]; then
+    wofi --conf "${CONFIG}" --style "${STYLE}"
+else
+    pkill wofi
+fi
+```
+
 - Q: **_"Which flavor of CSS is supported."_**\
  A: [GTK CSS](https://docs.gtk.org/gtk3/). Note that hsl-colors are not supported.
 
